@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  dinner_attendee: false
+  dinner: MyString
+  welcome_drinks: MyString
+  wedding: MyString
+  transportation: MyString
+  dietary_restrictions: MyString
+  lodging: MyString
+  favorite_drink: MyString
+  sunday_breakfast: MyString
+
+two:
+  dinner_attendee: false
+  dinner: MyString
+  welcome_drinks: MyString
+  wedding: MyString
+  transportation: MyString
+  dietary_restrictions: MyString
+  lodging: MyString
+  favorite_drink: MyString
+  sunday_breakfast: MyString

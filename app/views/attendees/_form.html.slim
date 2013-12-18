@@ -1,0 +1,36 @@
+= form_for @attendee do |f|
+  - if @attendee.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@attendee.errors.count, "error")} prohibited this attendee from being saved:"
+      ul
+        - @attendee.errors.full_messages.each do |message|
+          li = message
+
+  .field
+    = f.label :dinner_attendee
+    = f.check_box :dinner_attendee
+  .field
+    = f.label :dinner
+    = f.text_field :dinner
+  .field
+    = f.label :welcome_drinks
+    = f.text_field :welcome_drinks
+  .field
+    = f.label :wedding
+    = f.text_field :wedding
+  .field
+    = f.label :transportation
+    = f.text_field :transportation
+  .field
+    = f.label :dietary_restrictions
+    = f.text_field :dietary_restrictions
+  .field
+    = f.label :lodging
+    = f.text_field :lodging
+  .field
+    = f.label :favorite_drink
+    = f.text_field :favorite_drink
+  .field
+    = f.label :sunday_breakfast
+    = f.text_field :sunday_breakfast
+  .actions = f.submit 'Save'
