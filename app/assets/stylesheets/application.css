@@ -8,6 +8,27 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
- *= require_self
- *= require_tree .
+ *= require-self
+ *= require-tree .
  */
+
+#wedding-weekend ul {
+  list-style: none;
+}
+#wedding-weekend .date {
+  margin-top: 21px;
+  border-bottom: black solid 1px;
+}
+#wedding-weekend .time {
+  border-bottom: #DDD solid 1px;
+  margin-top: 11px;
+}
+#wedding-weekend .time time{
+  display: inline-block;
+  width: 15%;
+  vertical-align: top;
+}
+#wedding-weekend .time div {
+  display: inline-block;
+  width: 85%;
+}

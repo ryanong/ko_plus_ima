@@ -1,8 +1,9 @@
-h1 Editing attendee
+.row
+  .large-12.columns.new_attendee
+    h1 Editing attendee
 
-== render 'form'
+    == render 'form'
 
-= link_to 'Show', @attendee
-'|
-= link_to 'Back', attendees_path
-
+    = link_to 'Show', @attendee
+    '|
+    = link_to 'Back', attendees_path

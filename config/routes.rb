@@ -1,7 +1,12 @@
 KoPlusIma::Application.routes.draw do
+  post "mail" => "mail#create"
   resources :attendees
 
   root "pages#index"
+  controller :pages do
+    get :wedding_weekend
+    get :getting_there
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

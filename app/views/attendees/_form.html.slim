@@ -1,4 +1,4 @@
-= form_for @attendee do |f|
+= simple_form_for @attendee do |f|
   - if @attendee.errors.any?
     #error_explanation
       h2 = "#{pluralize(@attendee.errors.count, "error")} prohibited this attendee from being saved:"
@@ -6,31 +6,30 @@
         - @attendee.errors.full_messages.each do |message|
           li = message
 
-  .field
-    = f.label :dinner_attendee
-    = f.check_box :dinner_attendee
-  .field
-    = f.label :dinner
-    = f.text_field :dinner
-  .field
-    = f.label :welcome_drinks
-    = f.text_field :welcome_drinks
-  .field
-    = f.label :wedding
-    = f.text_field :wedding
-  .field
-    = f.label :transportation
-    = f.text_field :transportation
-  .field
-    = f.label :dietary_restrictions
-    = f.text_field :dietary_restrictions
-  .field
-    = f.label :lodging
-    = f.text_field :lodging
-  .field
-    = f.label :favorite_drink
-    = f.text_field :favorite_drink
-  .field
-    = f.label :sunday_breakfast
-    = f.text_field :sunday_breakfast
+  = f.input :dinner_attendee
+  = f.input :dinner,
+    collection: ["Yes", "No", "Maybe"],
+    value_method: :downcase,
+    as: :radio_buttons
+  = f.input :welcome_drinks,
+    collection: ["Yes", "No", "Maybe"],
+    value_method: :downcase,
+    as: :radio_buttons
+  = f.input :wedding,
+    collection: ["Yes", "No", "Maybe"],
+    value_method: :downcase,
+    as: :radio_buttons
+  = f.input :transportation,
+    collection: ["Yes", "No", "Maybe"],
+    value_method: :downcase,
+    as: :radio_buttons
+  = f.input :wedding
+  = f.input :transportation
+  = f.input :dietary_restrictions
+  = f.input :lodging
+  = f.input :favorite_drink
+  = f.input :sunday_breakfast,
+    collection: ["Yes", "No", "Maybe"],
+    value_method: :downcase,
+    as: :radio_buttons
   .actions = f.submit 'Save'
