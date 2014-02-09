@@ -12,23 +12,36 @@
  *= require-tree .
  */
 
-#wedding-weekend ul {
+.time-line {
   list-style: none;
 }
-#wedding-weekend .date {
+.time-line .date {
   margin-top: 21px;
   border-bottom: black solid 1px;
 }
-#wedding-weekend .time {
+.time-line .time {
   border-bottom: #DDD solid 1px;
   margin-top: 11px;
 }
-#wedding-weekend .time time{
+.time-line .time time{
   display: inline-block;
   width: 15%;
   vertical-align: top;
 }
-#wedding-weekend .time div {
+.time-line .time div {
   display: inline-block;
   width: 85%;
 }
+
+#registry ul {
+  list-style: none;
+}
+#registry ul li {
+  clear: both;
+}
+#registry ul a {
+  float: left;
+  margin-bottom: 11px;
+  margin-right: 11px;
+}
+

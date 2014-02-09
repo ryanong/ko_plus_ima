@@ -6,6 +6,7 @@ KoPlusIma::Application.routes.draw do
   controller :pages do
     get :wedding_weekend
     get :getting_there
+    get :activities
   end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
