@@ -62,18 +62,6 @@ $(document).ready(function(){
 
 	$('#home-slider').flexslider({ controlNav: false });
 
-	// Service Clicks
-
-	$('.service').click(function(){
-
-		if($(this).hasClass('open-service')){
-			$(this).removeClass('open-service');
-		}else{
-			$(this).addClass('open-service');
-		}
-
-	});
-
 	// Open & Close Projects
 
 	$('.work-overlay').click(function(){

@@ -103,7 +103,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 #quote-divider{
-	background: url('http://placehold.it/1200x800');
+	background: url('/assets/quote-bg.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 	position: relative;
@@ -470,6 +470,10 @@ h1, h2, h3, h4, h5, h6{
 	-moz-transition: all .3s;
 	transition: all .3s;
 	margin-bottom: 7px;
+}
+
+.services-row a{
+  color: black;
 }
 
 /***************** WORK ***************/
