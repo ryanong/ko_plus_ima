@@ -1,3 +1,46 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require-self
+ *= require-tree .
+ */
+
+#faq dt {
+  font-size: 1.2em;
+}
+
+#faq dd {
+  font-style: italic;
+}
+
+.time-line, .no-style {
+  list-style: none;
+}
+.time-line .date {
+  margin-top: 21px;
+  border-bottom: black solid 1px;
+}
+.time-line .time {
+  border-bottom: #DDD solid 1px;
+  margin-top: 11px;
+}
+.time-line .time time{
+  display: inline-block;
+  width: 15%;
+  vertical-align: top;
+}
+.time-line .time div {
+  display: inline-block;
+  width: 85%;
+}
+
 /***************** PSEUDO & GENERAl CLASSES ***************/
 
 body{  -webkit-font-smoothing: antialiased; }
@@ -103,7 +146,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 #quote-divider{
-	background: url('/assets/quote-bg.jpg');
+	background: asset-url('quote-bg.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 	position: relative;
