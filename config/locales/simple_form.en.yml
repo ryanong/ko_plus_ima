@@ -10,6 +10,21 @@ en:
       # html: '<abbr title="required">*</abbr>'
     error_notification:
       default_message: "Please review the problems below:"
+    labels:
+      attendee:
+        sunday_breakfast: Will you be staying for Sunday Breakfast?
+        welcome_drinks: Coming for welcome drinks?
+        wedding: Attending the wedding?
+        transportation: Will you be using our shuttle service on saturday?
+        sunday_breakfast: Will you be staying for Sunday Breakfast?
+    placeholders:
+      attendee:
+        first_name: First Name
+        last_name: Last Name
+        email: E-Mail
+        dietary_restrictions: Have any dietary restrictions?
+        lodging: Where will you be staying?
+        favorite_drink: What is your favorite drink?
     # Labels and hints examples
     # labels:
     #   defaults:

@@ -15,11 +15,9 @@
     value_method: :downcase,
     as: :radio_buttons
   = f.input :transportation,
-    collection: ["Yes", "No", "Maybe"],
+    collection: ["yes", "no", "maybe"],
     value_method: :downcase,
     as: :radio_buttons
-  = f.input :wedding
-  = f.input :transportation
   = f.input :dietary_restrictions
   = f.input :lodging
   = f.input :favorite_drink

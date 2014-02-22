@@ -12,6 +12,17 @@
  *= require-tree .
  */
 
+#rsvp .radio_buttons {
+  margin-right: 4px;
+}
+#nav .row, #rsvp .row {
+  padding: 0;
+}
+
+#rsvp .row .columns {
+  margin: 0 auto;
+  float: none;
+}
 .gift {
   display: block;
   background: white;
@@ -19,6 +30,9 @@
   height: 77px;
   text-align: center;
   border: black solid 2px;
+}
+#gifts .gift  a {
+  color: #FFF;
 }
 .row {
   padding: 20px 0;
