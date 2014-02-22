@@ -1,13 +1,8 @@
 = simple_form_for @attendee do |f|
-  - if @attendee.errors.any?
-    #error_explanation
-      h2 = "#{pluralize(@attendee.errors.count, "error")} prohibited this attendee from being saved:"
-      ul
-        - @attendee.errors.full_messages.each do |message|
-          li = message
-
-  = f.input :dinner_attendee
-  = f.input :dinner,
+  = f.input :first_name
+  = f.input :last_name
+  = f.input :email
+  = f.input :dinner_attendee,
     collection: ["Yes", "No", "Maybe"],
     value_method: :downcase,
     as: :radio_buttons
@@ -32,4 +27,5 @@
     collection: ["Yes", "No", "Maybe"],
     value_method: :downcase,
     as: :radio_buttons
+  = f.input :email
   .actions = f.submit 'Save', class: 'button'

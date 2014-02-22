@@ -20,7 +20,7 @@ section#home
 
 =render template: "pages/our_story"
 
-section#quote-divider
+section.image-divider#quote-divider
   .row
     .large-8.columns.large-centered
       h2.text-white the wedding will be held in the catskill mountains at stone tavern farm
@@ -70,15 +70,10 @@ section.pad-large#wedding-details
 =render template: "pages/getting_there"
 =render template: "pages/accomodations"
 =render template: "pages/registry"
-/getting there horse
-/accomodation
-/gifts
-/wedding weekend
-/things to do
-/faq
-/rsvp
-
-
+section.pad-large#rsvp
+  = simple_form_for Attendee.new do |f|
+    .row
+      .large-12.columns
 
 =render template: "pages/faq"
 =render template: "pages/contact"
