@@ -12,6 +12,20 @@
  *= require-tree .
  */
 
+#rsvp .overlay-container {
+  position: relative;
+}
+
+#rsvp .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity: 0;
+}
+
 #rsvp .radio_buttons {
   margin-right: 4px;
 }

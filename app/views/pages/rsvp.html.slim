@@ -4,38 +4,40 @@ section.pad-large.grey-bg#rsvp
       .page-header.pad-bottom
         h1 RSVP
         .hr.large-1.small-3
-  = simple_form_for Attendee.new do |f|
-    .row
-      .large-5.columns = f.input_field :first_name
-    .row
-      .large-5.columns = f.input_field :last_name
-    .row
-      .large-5.columns = f.input_field :email
-    .row
-      .large-5.columns = f.input :welcome_drinks,
-        collection: ["Yes", "No", "Maybe"],
-        value_method: :downcase,
-        as: :radio_buttons
-    .row
-      .large-5.columns = f.input :wedding,
-        collection: ["Yes", "No", "Maybe"],
-        value_method: :downcase,
-        as: :radio_buttons
-    .row
-      .large-5.columns = f.input_field :dietary_restrictions
-    .row
-      .large-5.columns = f.input :transportation,
-        collection: ["Yes", "No", "Maybe"],
-        value_method: :downcase,
-        as: :radio_buttons
-    .row
-      .large-5.columns = f.input_field :lodging
-    .row
-      .large-5.columns = f.input_field :favorite_drink
-    .row
-      .large-5.columns = f.input :sunday_breakfast,
-        collection: ["Yes", "No", "Maybe"],
-        value_method: :downcase,
-        as: :radio_buttons
-    .row
-      .large-5.columns.actions = f.submit 'Attend!', class: 'button'
+  .overlay-container
+    h2.overlay Thanks for RSVPing!
+    = simple_form_for Attendee.new, remote: true do |f|
+      .row
+        .large-5.columns = f.input_field :first_name
+      .row
+        .large-5.columns = f.input_field :last_name
+      .row
+        .large-5.columns = f.input_field :email
+      .row
+        .large-5.columns = f.input :welcome_drinks,
+          collection: ["Yes", "No", "Maybe"],
+          value_method: :downcase,
+          as: :radio_buttons
+      .row
+        .large-5.columns = f.input :wedding,
+          collection: ["Yes", "No", "Maybe"],
+          value_method: :downcase,
+          as: :radio_buttons
+      .row
+        .large-5.columns = f.input_field :dietary_restrictions
+      .row
+        .large-5.columns = f.input :transportation,
+          collection: ["Yes", "No", "Maybe"],
+          value_method: :downcase,
+          as: :radio_buttons
+      .row
+        .large-5.columns = f.input_field :lodging
+      .row
+        .large-5.columns = f.input_field :favorite_drink
+      .row
+        .large-5.columns = f.input :sunday_breakfast,
+          collection: ["Yes", "No", "Maybe"],
+          value_method: :downcase,
+          as: :radio_buttons
+      .row
+        .large-5.columns.actions = f.submit 'Attend!', class: 'button'

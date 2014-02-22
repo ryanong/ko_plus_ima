@@ -1,5 +1,6 @@
 class AttendeesController < ApplicationController
   before_action :set_attendee, only: [:show, :edit, :update, :destroy]
+  respond_to :json, :html
 
   # GET /attendees
   # GET /attendees.json
