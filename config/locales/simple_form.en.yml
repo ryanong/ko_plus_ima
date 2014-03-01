@@ -25,6 +25,7 @@ en:
         dietary_restrictions: Have any dietary restrictions?
         lodging: Where will you be staying?
         favorite_drink: What is your favorite drink?
+        comments: Comments, Questions?
     # Labels and hints examples
     # labels:
     #   defaults:

@@ -17,16 +17,13 @@
 //= require_self
 
 $(document).ready( function() {
-  console.log("awesome");
   $("#new_attendee").on("ajax:success", function(e, data, status, xhr){
-    console.log("success");
     $("#new_attendee").animate({ opacity: 0 });
-    $("#new_attendee .overlay").html("Thanks for RSVPing!");
-    $("#new_attendee .overlay").animate({ opacity: 1, "z-index": 100});
+    $("#rsvp .overlay").html("Thanks for RSVPing!");
+    $("#rsvp .overlay").animate({ opacity: 1, "z-index": 100});
   }).on("ajax:error", function(e, xhr, status, error){
-    console.log("error");
-    $("#new_attendee").animate({ opacity: 0 });
-    $("#new_attendee .overlay").html("Something went wrong! Please reload the page and try again.");
-    $("#new_attendee .overlay").animate({ opacity: 1, "z-index": 100});
+    $("#rsvp").animate({ opacity: 0 });
+    $("#rsvp .overlay").html("Something went wrong! Please reload the page and try again.");
+    $("#rsvp .overlay").animate({ opacity: 1, "z-index": 100});
   });
 });

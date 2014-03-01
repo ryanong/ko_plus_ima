@@ -40,4 +40,6 @@ section.pad-large.grey-bg#rsvp
           value_method: :downcase,
           as: :radio_buttons
       .row
+        .large-5.columns = f.input_field :comments
+      .row
         .large-5.columns.actions = f.submit 'Attend!', class: 'button'
