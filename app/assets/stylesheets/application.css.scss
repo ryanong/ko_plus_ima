@@ -12,6 +12,23 @@
  *= require-tree .
  */
 
+#attendee_first_name {
+  float: left;
+  display: inline-block;
+  width: 48%;
+}
+#attendee_last_name {
+  float: right;
+  display: inline-block;
+  width: 48%;
+}
+.attendee_guests label {
+  display: inline-block;
+  margin-right: 13px;
+}
+#attendee_guests {
+  width: 50px;
+}
 #rsvp .overlay-container {
   position: relative;
 }

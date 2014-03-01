@@ -8,9 +8,9 @@ section.pad-large.grey-bg#rsvp
     h2.overlay Thanks for RSVPing!
     = simple_form_for Attendee.new, remote: true do |f|
       .row
-        .large-5.columns = f.input_field :first_name
-      .row
-        .large-5.columns = f.input_field :last_name
+        .large-5.columns
+          = f.input_field :first_name
+          = f.input_field :last_name
       .row
         .large-5.columns = f.input_field :email
       .row
@@ -23,6 +23,9 @@ section.pad-large.grey-bg#rsvp
           collection: ["Yes", "No", "Maybe"],
           value_method: :downcase,
           as: :radio_buttons
+      .row
+        .large-5.columns = f.input :guests,
+          collection: 0..8
       .row
         .large-5.columns = f.input_field :dietary_restrictions
       .row
