@@ -54,10 +54,11 @@
   margin: 0 auto;
   float: none;
 }
+
 .gift {
   display: block;
   padding: 11px;
-  height: 77px;
+  height: 100px;
   text-align: center;
   border: white solid 2px;
   color: white;
@@ -79,7 +80,22 @@
   color: white;
   letter-spacing: 0;
   font-size: 26px;
+  width: 100%;
+  margin: auto;
 }
+
+.bbb h3 {
+  width: 57%;
+}
+
+.my-registry h3 {
+  line-height: 74px;
+}
+
+.mociun h3 {
+  margin-top: 8px;
+}
+
 .row {
   padding: 20px 0;
 }
