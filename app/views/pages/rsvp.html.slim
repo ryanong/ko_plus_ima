@@ -6,7 +6,7 @@ section.pad-large.grey-bg#rsvp
         .hr.large-1.small-3
   .overlay-container
     h2.overlay Thanks for RSVPing!
-    = simple_form_for Attendee.new, remote: true do |f|
+    = simple_form_for Attendee.new, remote: true, format: :json do |f|
       .row
         .large-5.columns
           = f.input_field :first_name
