@@ -139,7 +139,7 @@ $(document).ready(function(){
                     data: dataString,
                     success: function () {
                         $('#details-error').fadeOut(1000);
-                        $('#form-sent').fadeIn(1000);
+                        $('#contact-form .form-sent').fadeIn(1000);
                     }
                 });
                 return false;

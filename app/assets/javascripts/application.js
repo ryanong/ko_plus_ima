@@ -18,12 +18,9 @@
 
 $(document).ready( function() {
   $("#new_attendee").on("ajax:success", function(e, data, status, xhr){
-    $("#new_attendee").animate({ opacity: 0 });
-    $("#rsvp .overlay").html("Thanks for RSVPing!");
-    $("#rsvp .overlay").animate({ opacity: 1, "z-index": 100});
+    $("#rsvp .form-sent").fadeIn(1000);
   }).on("ajax:error", function(e, xhr, status, error){
-    $("#new_attendee").animate({ opacity: 0 });
-    $("#rsvp .overlay").html("Something went wrong! Please reload the page and try again.");
-    $("#rsvp .overlay").animate({ opacity: 1, "z-index": 100});
+    $("#rsvp .form-sent").html("Something went wrong! Please reload the page and try again.");
+    $("#rsvp .form-sent").fadeIn(1000);
   });
 });
