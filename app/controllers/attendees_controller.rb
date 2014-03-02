@@ -8,7 +8,7 @@ class AttendeesController < ApplicationController
 
     respond_to do |format|
       if @attendee.save
-        format.json { render action: 'show', status: :created, location: @attendee }
+        format.json { render json: @attendee.to_json, status: :created }
       else
         format.json { render json: @attendee.errors, status: :unprocessable_entity }
       end
