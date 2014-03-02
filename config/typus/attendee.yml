@@ -2,6 +2,6 @@
 
 Attendee:
   fields:
-    default: first_name, last_name, email, dinner, welcome_drinks, wedding, transportation, dietary_restrictions, lodging, favorite_drink, sunday_breakfast, guests, comments
+    default: first_name, last_name, email, welcome_drinks, wedding, transportation, dietary_restrictions, lodging, favorite_drink, sunday_breakfast, guests, comments
   relationships:
   application: Application
