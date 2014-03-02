@@ -22,7 +22,7 @@ $(document).ready( function() {
     $("#rsvp .overlay").html("Thanks for RSVPing!");
     $("#rsvp .overlay").animate({ opacity: 1, "z-index": 100});
   }).on("ajax:error", function(e, xhr, status, error){
-    $("#rsvp").animate({ opacity: 0 });
+    $("#new_attendee").animate({ opacity: 0 });
     $("#rsvp .overlay").html("Something went wrong! Please reload the page and try again.");
     $("#rsvp .overlay").animate({ opacity: 1, "z-index": 100});
   });

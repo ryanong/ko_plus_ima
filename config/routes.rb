@@ -1,6 +1,6 @@
 KoPlusIma::Application.routes.draw do
   post "mail" => "mail#create"
-  resources :attendees, only: :create
+  resources :attendees, only: [:create, :show]
 
   root "pages#index"
   controller :pages do
